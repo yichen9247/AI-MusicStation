@@ -1,0 +1,54 @@
+
+div.store-card {
+    cursor: pointer;
+    margin: 15px 0;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    width: calc(100% - 4px);
+    border: 2px solid #e3e8f7;
+
+    div.content-box {
+        width: 100%;
+        height: 175px;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-bottom: 2px solid #e3e8f7;
+        background-color: rgba(227, 232, 247, 0.45);
+    
+        div.store-card-content {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            position: absolute;
+
+            svg {
+                margin: auto;
+            }
+        }
+    }
+
+    div.content-box[lazy="loaded"] {
+        div.store-card-content {
+            background-color: #0003;
+        }
+    }
+
+    div.action-box {
+        height: 40px;
+        display: flex;
+        padding: 5px 15px;
+        align-items: center;
+        width: calc(100% - 30px);
+        background-color: #ffffff;
+
+        span.card-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #dd524d;
+            margin-left: auto;
+        }
+    }
+}

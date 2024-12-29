@@ -1,0 +1,74 @@
+
+div.topic-card {
+    margin: 15px 0;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    width: calc(100% - 4px);
+    border: 2px solid #e3e8f7;
+
+    div.content-box {
+        width: 100%;
+        height: 175px;
+        position: relative;
+        border-bottom: 2px solid #e3e8f7;
+
+        div.topic-card-content {
+            padding: 15px;
+            color: #ffffff;
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            width: calc(100% - 30px);
+            height: calc(100% - 30px);
+
+            p.topic-card-title {
+                font-size: 20px;
+                overflow: hidden;
+                font-weight: 500;
+                line-height: 28px;
+                overflow-x: scroll;
+                white-space: nowrap;
+            }
+
+            div.topic-card-desc {
+                flex: 1;
+                margin-top: 10px;
+                overflow: hidden;
+                overflow-y: scroll;
+                word-break: break-all;
+            }
+        }
+    }
+
+    div.content-box[lazy="loaded"] {
+        div.topic-card-content {
+            background-color: #0005;
+        }
+    }
+
+    div.action-box {
+        height: 40px;
+        display: flex;
+        padding: 5px 15px;
+        align-items: center;
+        width: calc(100% - 30px);
+        background-color: #ffffff;
+
+        div.button-group {
+            margin-left: auto;
+
+            button.play {
+                i.el-icon {
+                    width: 1.45em;
+                    height: 1.45em;
+
+                    svg {
+                        width: inherit;
+                        height: inherit;
+                    }
+                }
+            }
+        }
+    }
+}

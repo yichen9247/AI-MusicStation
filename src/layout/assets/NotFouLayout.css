@@ -1,0 +1,14 @@
+div.not-layout {
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+div.not-layout img.loading-icon {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  position: relative;
+}
