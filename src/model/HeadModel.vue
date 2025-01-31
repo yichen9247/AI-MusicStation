@@ -10,7 +10,7 @@
 </script>
 
 <template>
-    <header class="app-header" :style="{ width: applicationStore.isDeviceMobile ? 'calc(100% - 20px)' : '450px' }">
+    <header class="app-header" :style="{ width: applicationStore.isDeviceMobile ? '100%' : '450px' }">
         <div class="head-btn back-btn" @click="router.push('/')" v-if="config.back">
             <ArrowLeft/>
         </div>
